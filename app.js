@@ -61,6 +61,42 @@ const photoBank = {
     '1532012197267-da84d127e765', // books
     '1551029506-0807df4e2031',    // open book
   ],
+  food: [
+    '1565299624946-b28f40a0ae38', // pizza
+    '1565958011703-44f9829ba187', // pasta
+    '1567620905732-2d1ec7ab7445', // bowl
+    '1551782450-a2132b4ba21d',    // burger
+    '1559054663-e8d23213f55c',    // steak
+    '1546554137-f86b9593a222',    // tacos
+    '1551183053-bf91a1d81141',    // sushi
+    '1565895405138-6c3a1555da6a', // curry
+    '1546069901-ba9599a7e63c',    // salad
+    '1540189549336-e6e99c3679fe', // ramen
+  ],
+  film: [
+    '1542204165-65bf26472b9b', // cinema seats
+    '1574375927938-d5a98e8ffe85', // movie theater
+    '1517604931442-7e0c8ed2963c', // popcorn
+    '1485846234645-a62644f84728', // film reel
+    '1489599849927-2ee91cede3ba', // cinema
+    '1543536448-1e76fc2795bf',    // theater
+    '1478720568477-152d9b164e26', // film strip
+    '1440404653325-ab127d49abc1', // popcorn
+    '1500917293891-ef795e70e1f6', // theater seats
+    '1626814026160-2237a95fc5a0', // cinema lights
+  ],
+  city: [
+    '1502602898657-3e91760cbb34', // paris
+    '1538970272646-f61fabb3a8a2', // lisbon
+    '1513581166391-887a96ddeafd', // amsterdam
+    '1499856871958-5b9627545d1a', // rome
+    '1531058020387-3be344556be6', // porto
+    '1518391846015-55a9cc003b25', // kyoto
+    '1480714378408-67cf0d13bc1b', // new york
+    '1513635269975-59663e0ac1ad', // mexico city
+    '1518684079-3c830dcef090',    // istanbul
+    '1467269204594-9661b134dd2b', // copenhagen
+  ],
   fallback: [
     '1557682250-33bd709cbe85', '1557683316-973673baf926', '1557683304-673a23048d34',
     '1557682233-43e671d27b50', '1557682260-96773eb01377',
@@ -156,6 +192,69 @@ const bookItems = [
   ['Saul Bass: A Life',             'Laurence King',       '$70',  4.7, 442, false],
 ];
 
+const dinnerItems = [
+  ['One-Pan Lemon Chicken',     '4 servings · 25 min',           '420 kcal',   4.8, 612, true],
+  ['Spicy Tomato Pasta',        '2 servings · 20 min',           '560 kcal',   4.9, 2210, true],
+  ['Miso Glazed Salmon',        '2 servings · 25 min',           '480 kcal',   4.7, 880, false],
+  ['Crispy Tofu Bowl',          '4 servings · 30 min',           '510 kcal',   4.6, 412, false],
+  ['Sheet-Pan Chicken Tacos',   '4 servings · 30 min',           '380 kcal',   4.8, 1112, true],
+  ['Black Bean Chilaquiles',    '4 servings · 25 min',           '460 kcal',   4.7, 305, false],
+  ['Coconut Curry',             '4 servings · 30 min',           '590 kcal',   4.7, 980, true],
+  ['Lemon Orzo Soup',           '6 servings · 35 min',           '320 kcal',   4.5, 188, false],
+  ['Honey Sesame Tofu',         '2 servings · 20 min',           '410 kcal',   4.6, 240, false],
+  ['Roasted Veggie Bowl',       '2 servings · 25 min',           '470 kcal',   4.6, 612, false],
+  ['Garlicky Shrimp Pasta',     '4 servings · 25 min',           '610 kcal',   4.8, 920, true],
+  ['Creamy Mushroom Risotto',   '4 servings · 35 min',           '540 kcal',   4.7, 815, false],
+  ['Sticky Ginger Beef',        '4 servings · 25 min',           '520 kcal',   4.8, 411, false],
+  ['Smoked Paprika Chicken',    '4 servings · 30 min',           '450 kcal',   4.6, 320, false],
+  ['Veggie Pad Thai',           '4 servings · 25 min',           '500 kcal',   4.7, 1120, true],
+  ['Chicken Tikka Bowl',        '4 servings · 30 min',           '510 kcal',   4.7, 612, false],
+  ['Soba Salad',                '2 servings · 20 min',           '380 kcal',   4.5, 188, false],
+  ['Halloumi Skewers',          '4 servings · 25 min',           '440 kcal',   4.6, 290, false],
+];
+
+const movieItems = [
+  ['Past Lives',           'Drama · 1h 46m · 2023',       '★ 95% RT',   4.6, 4220, true],
+  ['Anatomy of a Fall',    'Drama · 2h 31m · 2023',       '★ 96% RT',   4.7, 2810, true],
+  ['The Brutalist',        'Drama · 3h 35m · 2024',       '★ 92% RT',   4.5, 1188, false],
+  ['Perfect Days',         'Drama · 2h 4m · 2023',        '★ 95% RT',   4.7, 1422, true],
+  ['Aftersun',             'Drama · 1h 41m · 2022',       '★ 95% RT',   4.6, 3210, false],
+  ['The Holdovers',        'Comedy · 2h 13m · 2023',      '★ 97% RT',   4.7, 2890, false],
+  ['All of Us Strangers',  'Drama · 1h 45m · 2023',       '★ 95% RT',   4.6, 1411, false],
+  ['Drive My Car',         'Drama · 2h 59m · 2021',       '★ 96% RT',   4.7, 1150, true],
+  ['Petite Maman',         'Drama · 1h 12m · 2021',       '★ 99% RT',   4.6, 612,  false],
+  ['Past Tense',           'Drama · 1h 30m · 2024',       '★ 92% RT',   4.4, 188,  false],
+  ['Decision to Leave',    'Mystery · 2h 19m · 2022',     '★ 94% RT',   4.5, 712,  false],
+  ['Banshees of Inisherin','Drama · 1h 54m · 2022',       '★ 96% RT',   4.6, 4112, false],
+  ['Showing Up',           'Comedy · 1h 48m · 2023',      '★ 91% RT',   4.4, 411,  false],
+  ['Saint Omer',           'Drama · 2h 2m · 2022',        '★ 96% RT',   4.6, 220,  false],
+  ['First Cow',            'Drama · 2h 2m · 2020',        '★ 96% RT',   4.7, 905,  false],
+  ['The Worst Person',     'Drama · 2h 8m · 2021',        '★ 96% RT',   4.6, 2244, true],
+  ['Licorice Pizza',       'Comedy · 2h 13m · 2021',      '★ 91% RT',   4.5, 1855, false],
+  ['Memoria',              'Drama · 2h 16m · 2021',       '★ 92% RT',   4.5, 320,  false],
+];
+
+const cityItems = [
+  ['Lisbon',         'Portugal · Coastal capital',       '4 day trip · $620',    4.9, 8120, true],
+  ['Mexico City',    'Mexico · Vibrant metropolis',      '5 day trip · $480',    4.8, 6411, true],
+  ['Porto',          'Portugal · River & wine',          '3 day trip · $510',    4.7, 2240, false],
+  ['Copenhagen',     'Denmark · Design & cycling',       '4 day trip · $880',    4.8, 4120, true],
+  ['Kyoto',          'Japan · Temples & gardens',        '5 day trip · $1,180',  4.9, 5210, true],
+  ['Istanbul',       'Türkiye · Two continents',         '5 day trip · $720',    4.7, 3120, false],
+  ['Marrakech',      'Morocco · Souks & riads',          '4 day trip · $560',    4.7, 2880, false],
+  ['Edinburgh',      'Scotland · Hills & history',       '3 day trip · $640',    4.7, 1411, false],
+  ['Vienna',         'Austria · Coffee & opera',         '4 day trip · $720',    4.8, 1950, false],
+  ['Buenos Aires',   'Argentina · Tango & beef',         '5 day trip · $590',    4.7, 1880, false],
+  ['Rome',           'Italy · Layered history',          '4 day trip · $760',    4.7, 6720, true],
+  ['Amsterdam',      'Netherlands · Canals & art',       '3 day trip · $740',    4.7, 4220, false],
+  ['Seoul',          'South Korea · Food & nights',      '5 day trip · $980',    4.8, 3811, false],
+  ['Mumbai',         'India · Energy & sea',             '5 day trip · $410',    4.6, 1820, false],
+  ['Cape Town',      'South Africa · Mountain & sea',    '6 day trip · $1,210',  4.8, 1422, true],
+  ['Athens',         'Greece · Ancient & easy',          '4 day trip · $560',    4.7, 1620, false],
+  ['Florence',       'Italy · Renaissance walks',        '3 day trip · $660',    4.8, 2210, false],
+  ['Tbilisi',        'Georgia · Wine & old towns',       '4 day trip · $390',    4.7, 612,  false],
+];
+
 function makeItem([title, sub, meta, rating, reviews, fav], i, prefix) {
   return {
     img: img(prefix, i),
@@ -165,32 +264,100 @@ function makeItem([title, sub, meta, rating, reviews, fav], i, prefix) {
 
 const responses = [
   {
+    id: 'miami',
     keywords: ['miami', 'airbnb', 'home', 'stay', 'place', 'trip'],
     bubble: 'Found 1,200+ places to stay in Miami next week.',
     bubbleSub: 'Top picks shown first',
     items: miamiItems.map((it, i) => makeItem(it, i, 'miami')),
+    followUps: [
+      'Family-friendly with a pool',
+      'Walking distance to the beach',
+      'Under $300 a night',
+      'Quiet neighborhood',
+    ],
   },
   {
+    id: 'shoe',
     keywords: ['shoe', 'sneaker', 'running', 'trainer', 'pegasus'],
     bubble: 'Top running shoes under $200, ranked by review consensus.',
     bubbleSub: '348 results',
     items: shoeItems.map((it, i) => makeItem(it, i, 'shoe')),
+    followUps: [
+      'Best for marathons',
+      'Max cushion only',
+      'Under $150',
+      'Wide toe box',
+    ],
   },
   {
-    keywords: ['hotel', 'tokyo', 'japan', 'kyoto', 'osaka', 'ryokan'],
+    id: 'tokyo',
+    keywords: ['hotel', 'tokyo', 'japan', 'osaka', 'ryokan'],
     bubble: 'Top-rated hotels in Tokyo, mixing iconic and design-forward.',
     bubbleSub: '530+ hotels',
     items: tokyoItems.map((it, i) => makeItem(it, i, 'tokyo')),
+    followUps: [
+      'Closer to Shibuya',
+      'Under $400 a night',
+      'Boutique and quiet',
+      'Best for first-timers',
+    ],
   },
   {
-    keywords: ['book', 'gift', 'read', 'novel', 'coffee', 'present'],
+    id: 'book',
+    keywords: ['book', 'gift', 'novel', 'coffee table', 'present'],
     bubble: 'Coffee table books that always make a great gift.',
     bubbleSub: '120 picks',
     items: bookItems.map((it, i) => makeItem(it, i, 'book')),
-  }
+    followUps: [
+      'Photography only',
+      'Under $60',
+      'Architecture & design',
+      'Something more obscure',
+    ],
+  },
+  {
+    id: 'food',
+    keywords: ['dinner', 'recipe', 'cook', 'meal', 'food', 'eat tonight'],
+    bubble: 'Quick dinner ideas you can make tonight.',
+    bubbleSub: '38 recipes',
+    items: dinnerItems.map((it, i) => makeItem(it, i, 'food')),
+    followUps: [
+      'Vegetarian only',
+      'Under 25 minutes',
+      'One pan',
+      'Kid-friendly',
+    ],
+  },
+  {
+    id: 'film',
+    keywords: ['movie', 'film', 'watch', 'cinema', 'show', 'tonight'],
+    bubble: 'Critically loved films you can stream tonight.',
+    bubbleSub: '92 films',
+    items: movieItems.map((it, i) => makeItem(it, i, 'film')),
+    followUps: [
+      'Under two hours',
+      'Comedies only',
+      'Foreign language',
+      'Released this year',
+    ],
+  },
+  {
+    id: 'city',
+    keywords: ['vacation', 'destination', 'city', 'travel to', 'where to go', 'visit'],
+    bubble: 'Cities to visit on a long weekend.',
+    bubbleSub: '40 destinations',
+    items: cityItems.map((it, i) => makeItem(it, i, 'city')),
+    followUps: [
+      'Warmer weather',
+      'Under $700 total',
+      'Good food scene',
+      'Easy to get around',
+    ],
+  },
 ];
 
 const fallback = {
+  id: 'fallback',
   bubble: "Here are a few directions worth exploring.",
   bubbleSub: '',
   items: [
@@ -200,16 +367,46 @@ const fallback = {
     ['Direction four',  'Often overlooked',  '',  0, 0, false],
     ['Direction five',  'A wildcard',        '',  0, 0, false],
   ].map((it, i) => makeItem(it, i, 'fallback')),
+  followUps: [],
 };
+
+let lastSource = null; // last fresh response object
+
+function scoreResponse(r, t) {
+  return r.keywords ? r.keywords.reduce((s, k) => t.includes(k) ? s + 1 : s, 0) : 0;
+}
 
 function pickResponse(text) {
   const t = text.toLowerCase();
   let best = null, bestScore = 0;
   for (const r of responses) {
-    const score = r.keywords.reduce((s, k) => t.includes(k) ? s + 1 : s, 0);
-    if (score > bestScore) { best = r; bestScore = score; }
+    const s = scoreResponse(r, t);
+    if (s > bestScore) { best = r; bestScore = s; }
   }
-  return best || fallback;
+  // Fresh topic if any keyword matched (and is different from current)
+  if (bestScore > 0) {
+    lastSource = best;
+    return best;
+  }
+  // Otherwise refine the active source if we have one
+  if (lastSource) {
+    return refineResponse(lastSource, text);
+  }
+  return fallback;
+}
+
+function refineResponse(prev, followUpText) {
+  const top = prev.items.slice(0, 5).map(it => ({ ...it, fav: true, mode: 'best' }));
+  const total = prev.items.length;
+  const totalLabel = total >= 18 ? `${total * 28}` : `${total * 5}`;
+  return {
+    id: prev.id + '-refined',
+    bubble: 'Here are top selections that check all your boxes:',
+    bubbleSub: `Showing top ${top.length} of ${totalLabel} matches`,
+    items: top,
+    followUps: prev.followUps,
+    refined: true,
+  };
 }
 
 /* ---------- DOM helpers ---------- */
@@ -264,6 +461,7 @@ function scrollChatToBottom(smooth = true) {
 
 function addUserMessage(text) {
   emptyEl.classList.add('hidden');
+  // Hide suggestion row while AI is "thinking" — addAiResponse re-populates after
   suggestionsEl.classList.add('hidden');
   const msg = el('div', { class: 'msg user' }, el('div', { class: 'bubble' }, text));
   chatEl.appendChild(msg);
@@ -285,7 +483,15 @@ function buildCard(item, i) {
   const photo = el('div', { class: 'card-photo' },
     el('img', { src: item.img, alt: '', loading: 'lazy', decoding: 'async' })
   );
-  if (item.fav) {
+  if (item.mode === 'best') {
+    const b = el('div', { class: 'badge badge-best' });
+    const sparkSvg = svgEl('0 0 16 16',
+      { d: 'M8 0l1.6 4.4L14 6l-4.4 1.6L8 12l-1.6-4.4L2 6l4.4-1.6z',
+        fill: '#222' });
+    b.appendChild(sparkSvg);
+    b.appendChild(document.createTextNode(' Best match'));
+    photo.appendChild(b);
+  } else if (item.fav) {
     photo.appendChild(el('div', { class: 'badge' }, 'Guest favorite'));
   }
   const heart = el('div', { class: 'heart' });
@@ -350,7 +556,23 @@ function addAiResponse(response) {
   const block = { el: results, p: 0, animating: false, raf: 0 };
   blocks.push(block);
   attachBlockGestures(results, block);
+  // After the response is in, update follow-up chips and placeholder
+  updateSuggestions(response.followUps || []);
+  inputEl.placeholder = 'Refine or ask something else…';
   return block;
+}
+
+function updateSuggestions(prompts) {
+  suggestionsEl.innerHTML = '';
+  if (!prompts.length) {
+    suggestionsEl.classList.add('hidden');
+    return;
+  }
+  suggestionsEl.classList.remove('hidden');
+  for (const p of prompts) {
+    const chip = el('button', { class: 'chip', dataset: { prompt: p } }, p);
+    suggestionsEl.appendChild(chip);
+  }
 }
 
 /* ---------- p-state + animation ---------- */
